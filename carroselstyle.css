@@ -1,0 +1,126 @@
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+/* 
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #343a40;
+}
+
+.carrosel {
+  color: #fff;
+  width: 800px;
+  margin: 100px auto;
+  background-color: #087f5b;
+  padding: 32px 48px 32px 86px;
+  border-radius: 8px;
+  display: flex;  
+  align-items: center;   
+
+
+  display: flex;
+  gap: 86px;
+
+  position: relative;
+}
+
+img {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.7);
+  box-shadow: 0 12px 24px rgba(0,0,0,25);
+  
+}
+
+.texto-testemunho{
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #e6fcf5;
+}
+
+.autor-testemunho{
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #c3fae8;
+}
+
+.titulo-testemunho{
+  font-size: 12px;
+  color: #c3fae8;
+}
+
+.btn{
+  background-color: #fff;
+  border:none;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.btn-icon{
+  height: 24px;
+  width: 24px;
+  stroke: #087f5b;
+}
+
+.btn--esquerdo {
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(50%,-50%);
+}
+
+.btn--direito{
+  left: 0;
+  position: absolute;
+  top:50%; 
+  transform: translate(-40%,-50%);
+}
+
+.ponto{
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 2px solid#087f5b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pontos{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
+  transform: translate(0, 32px);
+
+  display: flex;
+  gap: 12px;
+}
+
+.ponto--selecionado{
+  background-color: #087f5b;
+}
